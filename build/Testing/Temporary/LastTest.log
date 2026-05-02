@@ -1,0 +1,78 @@
+Start testing: May 02 10:58 UTC
+----------------------------------------------------------
+1/5 Testing: test_override
+1/5 Test: test_override
+Command: "/usr/local/bin/cmake" "-Djustomize=/home/runner/work/justomize/justomize/build/justomize" "-Dbase=/home/runner/work/justomize/justomize/build/tests/test_override_base.json" "-Doverlay=/home/runner/work/justomize/justomize/build/tests/test_override_overlay.json" "-Dexpected=/home/runner/work/justomize/justomize/build/tests/test_override_expected.json" "-Dexit_code=0" "-P" "/home/runner/work/justomize/justomize/tests/run_test.cmake"
+Directory: /home/runner/work/justomize/justomize/build/tests
+"test_override" start time: May 02 10:58 UTC
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"test_override" end time: May 02 10:58 UTC
+"test_override" time elapsed: 00:00:00
+----------------------------------------------------------
+
+2/5 Testing: test_merge_new_key
+2/5 Test: test_merge_new_key
+Command: "/usr/local/bin/cmake" "-Djustomize=/home/runner/work/justomize/justomize/build/justomize" "-Dbase=/home/runner/work/justomize/justomize/build/tests/test_merge_new_key_base.json" "-Doverlay=/home/runner/work/justomize/justomize/build/tests/test_merge_new_key_overlay.json" "-Dexpected=/home/runner/work/justomize/justomize/build/tests/test_merge_new_key_expected.json" "-Dexit_code=0" "-P" "/home/runner/work/justomize/justomize/tests/run_test.cmake"
+Directory: /home/runner/work/justomize/justomize/build/tests
+"test_merge_new_key" start time: May 02 10:58 UTC
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"test_merge_new_key" end time: May 02 10:58 UTC
+"test_merge_new_key" time elapsed: 00:00:00
+----------------------------------------------------------
+
+3/5 Testing: test_nested_merge
+3/5 Test: test_nested_merge
+Command: "/usr/local/bin/cmake" "-Djustomize=/home/runner/work/justomize/justomize/build/justomize" "-Dbase=/home/runner/work/justomize/justomize/build/tests/test_nested_merge_base.json" "-Doverlay=/home/runner/work/justomize/justomize/build/tests/test_nested_merge_overlay.json" "-Dexpected=/home/runner/work/justomize/justomize/build/tests/test_nested_merge_expected.json" "-Dexit_code=0" "-P" "/home/runner/work/justomize/justomize/tests/run_test.cmake"
+Directory: /home/runner/work/justomize/justomize/build/tests
+"test_nested_merge" start time: May 02 10:58 UTC
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"test_nested_merge" end time: May 02 10:58 UTC
+"test_nested_merge" time elapsed: 00:00:00
+----------------------------------------------------------
+
+4/5 Testing: test_array_override
+4/5 Test: test_array_override
+Command: "/usr/local/bin/cmake" "-Djustomize=/home/runner/work/justomize/justomize/build/justomize" "-Dbase=/home/runner/work/justomize/justomize/build/tests/test_array_override_base.json" "-Doverlay=/home/runner/work/justomize/justomize/build/tests/test_array_override_overlay.json" "-Dexpected=/home/runner/work/justomize/justomize/build/tests/test_array_override_expected.json" "-Dexit_code=0" "-P" "/home/runner/work/justomize/justomize/tests/run_test.cmake"
+Directory: /home/runner/work/justomize/justomize/build/tests
+"test_array_override" start time: May 02 10:58 UTC
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"test_array_override" end time: May 02 10:58 UTC
+"test_array_override" time elapsed: 00:00:00
+----------------------------------------------------------
+
+5/5 Testing: test_type_mismatch_error
+5/5 Test: test_type_mismatch_error
+Command: "/usr/local/bin/cmake" "-Djustomize=/home/runner/work/justomize/justomize/build/justomize" "-Dbase=/home/runner/work/justomize/justomize/build/tests/test_type_mismatch_error_base.json" "-Doverlay=/home/runner/work/justomize/justomize/build/tests/test_type_mismatch_error_overlay.json" "-Dexpected=/home/runner/work/justomize/justomize/build/tests/test_type_mismatch_error_expected.json" "-Dexit_code=1" "-P" "/home/runner/work/justomize/justomize/tests/run_test.cmake"
+Directory: /home/runner/work/justomize/justomize/build/tests
+"test_type_mismatch_error" start time: May 02 10:58 UTC
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"test_type_mismatch_error" end time: May 02 10:58 UTC
+"test_type_mismatch_error" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: May 02 10:58 UTC
