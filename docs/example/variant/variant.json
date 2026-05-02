@@ -1,0 +1,13 @@
+{
+    "number_field": 1,
+    "string_field": "overlay",
+    "boolean_field": true,
+    "array_field": [1],
+    "object_field": {
+        "x": 1,
+        "y": 1,
+        "z": 1
+    },
+    "field_that_exists_only_in_overlay": "overlay value",
+    "field_with_mismatched_type": 0
+}

@@ -3,6 +3,7 @@
 #include <sstream>
 #include <stdexcept>
 #include <string>
+#include <optional>
 
 #include <nlohmann/json.hpp>
 
@@ -16,14 +17,14 @@ using json = nlohmann::json;
 //   - Same non-object type or one is not an object → overlay wins
 //   - Type mismatch → throw (unless ignore_types is true)
 // ---------------------------------------------------------------------------
-static json merge(const json& base, const json& overlay, bool ignore_types)
+static json merge(const json& base, const json& overlay, bool ignore_types, std::optional<std::string> merging_key = std::nullopt)
 {
     // If both are objects, merge key by key
     if (base.is_object() && overlay.is_object()) {
         json result = base;
         for (auto& [key, overlay_val] : overlay.items()) {
             if (result.contains(key)) {
-                result[key] = merge(result[key], overlay_val, ignore_types);
+                result[key] = merge(result[key], overlay_val, ignore_types, key);
             } else {
                 result[key] = overlay_val;
             }
@@ -35,7 +36,11 @@ static json merge(const json& base, const json& overlay, bool ignore_types)
     if (base.type() != overlay.type()) {
         if (!ignore_types) {
             std::ostringstream msg;
-            msg << "Type mismatch: base has type '"
+            msg << "Type mismatch";
+            if (merging_key) {
+                msg << " at key '" << *merging_key << "'";
+            }
+            msg << ": base has type '"
                 << base.type_name()
                 << "' but overlay has type '"
                 << overlay.type_name() << "'";
