@@ -1,1 +1,0 @@
-/usr/bin/c++ -O3 -DNDEBUG -Wl,--dependency-file=CMakeFiles/justomize.dir/link.d CMakeFiles/justomize.dir/src/main.cpp.o -o justomize
