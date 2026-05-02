@@ -1,0 +1,12 @@
+{
+    "number_field": 0,
+    "string_field": "default",
+    "boolean_field": false,
+    "array_field": [0],
+    "object_field": {
+        "x": 0,
+        "y": 0
+    },
+    "field_with_mismatched_type": "string value",
+    "field_that_exists_only_in_base": "base value"
+}
