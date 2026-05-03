@@ -1,6 +1,7 @@
 # justomize
 
 A command-line tool that merges/patches JSON files — like [kustomize](https://kustomize.io/) but for JSON.
+NOTE: This tool was developed by AI Agent.
 
 ## How it works
 
